@@ -1,19 +1,19 @@
-import "./datatable.scss";
+import "./productTable.scss";
 import { DataGrid } from "@mui/x-data-grid";
-import { userColumns, userRows } from "../../datatablesource";
+import { Product, userRows } from "../../datatablesource";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { db } from "../../firebase";
 import { collection, getDocs, doc, deleteDoc } from "firebase/firestore";
 
-const Datatable = () => {
+const ProductTable = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       let list = [];
       try {
-        const querySnapshot = await getDocs(collection(db, "users"));
+        const querySnapshot = await getDocs(collection(db, "products"));
         querySnapshot.forEach((doc) => {
           console.log(doc);
           list.push({id: doc.id, ...doc.data()});
@@ -29,7 +29,7 @@ const Datatable = () => {
 
   const handleDelete = async (id) => {
     try{
-      await deleteDoc(doc(db, "users", id));
+      await deleteDoc(doc(db, "products", id));
       setData(data.filter((item) => item.id !== id));
     }catch(err){
       console.log(err);
@@ -61,15 +61,15 @@ const Datatable = () => {
   return (
     <div className="datatable">
       <div className="datatableTitle">
-        Add New User
-        <Link to="/users/add" className="link">
-          Add New Users
+        Add New Product
+        <Link to="/products/new" className="link">
+          Add New Product
         </Link>
       </div>
       <DataGrid
         className="datagrid"
         rows={data}
-        columns={userColumns?.concat(actionColumn)}
+        columns={Product?.concat(actionColumn)}
         pageSize={10}
         rowsPerPageOptions={[9]}
         checkboxSelection
@@ -78,4 +78,4 @@ const Datatable = () => {
   );
 };
 
-export default Datatable;
+export default ProductTable;

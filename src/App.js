@@ -1,8 +1,10 @@
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import List from "./pages/list/List";
+import ProductList from "./pages/productList/ProductList";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
+import Add from "./pages/add/Add";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { productInputs, userInputs } from "./formSource";
 import "./style/dark.scss";
@@ -21,6 +23,8 @@ function App() {
     <div className={darkMode ? "app dark" : "app"}>
       <BrowserRouter>
         <Routes>
+
+
           <Route path="/">
             <Route path="login" element={<Login />} />
             <Route
@@ -49,10 +53,10 @@ function App() {
                 }
               />
               <Route
-                path="new"
+                path="add"
                 element={
                   <RequireAuth>
-                    <New inputs={userInputs} title="Add New User" />
+                    <Add inputs={userInputs} title="Add New User" />
                   </RequireAuth>
                 }
               />
@@ -62,7 +66,7 @@ function App() {
                 index
                 element={
                   <RequireAuth>
-                    <List />
+                    <ProductList />
                   </RequireAuth>
                 }
               />

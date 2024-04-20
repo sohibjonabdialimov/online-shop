@@ -1,23 +1,24 @@
-.new1 {
+.new {
   width: 100%;
   display: flex;
+
   .newContainer {
     flex: 6;
 
-    .top1,
-    .bottom1 {
+    .top,
+    .bottom {
       -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
       box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-      padding: 50px;
+      padding: 10px;
       margin: 20px;
-
+      display: flex;
 
       h1 {
         color: lightgray;
         font-size: 20px;
       }
 
-      .left1 {
+      .left {
         flex: 1;
         text-align: center;
 
@@ -29,17 +30,18 @@
         }
       }
 
-      .right1 {
+      .right {
         flex: 2;
 
         form {
           display: flex;
           flex-wrap: wrap;
           gap: 30px;
-          justify-content: space-around;
-          
+          justify-content: space-between;
+          padding: 50px;
           .formInput {
             width: 40%;
+            padding: 0 30px;
 
             label {
               display: flex;
@@ -60,10 +62,7 @@
           }
 
           button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 200px;
+            width: 150px;
             padding: 10px;
             border: none;
             background-color: teal;

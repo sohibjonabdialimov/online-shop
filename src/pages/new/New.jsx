@@ -73,11 +73,15 @@ const New = ({ inputs, title }) => {
       //   data.email,
       //   data.password
       // );
-      const res = await setDoc(doc(db, "products"), {
+      // await setDoc(doc(db, "users", res.user.uid), {
+      //   ...data,
+      //   timeStamp: serverTimestamp(),
+      // });
+      await addDoc(collection(db, "products"), {
         ...data,
         timeStamp: serverTimestamp(),
       });
-      console.log(res);
+
       navigate(-1);
     } catch (err) {
       console.log(err);
@@ -85,36 +89,38 @@ const New = ({ inputs, title }) => {
   };
 
   return (
-    <div className="new">
+    <div className="new1">
       <Sidebar />
       <div className="newContainer">
         <Navbar />
         <div className="top">
           <h1>{title}</h1>
         </div>
-        <div className="bottom">
-          <div className="left">
-            <img
-              src={
-                file
-                  ? URL.createObjectURL(file)
-                  : "https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg"
-              }
-              alt=""
-            />
-          </div>
-          <div className="right">
+        <div className="bottom1">
+          <div className="right1">
             <form onSubmit={handleAdd}>
               <div className="formInput">
-                <label htmlFor="file">
-                  Image: <DriveFolderUploadOutlinedIcon className="icon" />
-                </label>
-                <input
-                  type="file"
-                  id="file"
-                  onChange={(e) => setFile(e.target.files[0])}
-                  style={{ display: "none" }}
-                />
+                <div className="img">
+                  <div className="left1">
+                    <img
+                      src={
+                        file
+                          ? URL.createObjectURL(file)
+                          : "https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg"
+                      }
+                      alt=""
+                    />
+                  </div>
+                  <label htmlFor="file">
+                    Image: <DriveFolderUploadOutlinedIcon className="icon" />
+                  </label>
+                  <input
+                    type="file"
+                    id="file"
+                    onChange={(e) => setFile(e.target.files[0])}
+                    style={{ display: "none" }}
+                  />
+                </div>
               </div>
 
               {inputs.map((input) => (

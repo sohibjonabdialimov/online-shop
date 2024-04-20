@@ -1,41 +1,69 @@
 export const userColumns = [
-  { field: "id", headerName: "ID", width: 70 },
+  { field: "id", headerName: "ID", width: 270 },
   {
-    field: "user",
-    headerName: "User",
+    field: "displayName",
+    headerName: "Full Name",
+    width: 250
+  },
+  {
+    field: "email",
+    headerName: "Email",
+    width: 250,
+  },
+  {
+    field: "password",
+    headerName: "Password",
+    width: 170,
+  },
+  {
+    field: "phone",
+    headerName: "Phone",
+    width: 200,
+  },
+];
+export const Product = [
+  { field: "id", headerName: "ID", width: 220 },
+  {
+    field: "name",
+    headerName: "Name",
     width: 230,
     renderCell: (params) => {
       return (
         <div className="cellWithImg">
           <img className="cellImg" src={params.row.img} alt="avatar" />
-          {params.row.username}
+          {params.row.name}
         </div>
       );
     },
   },
   {
-    field: "email",
-    headerName: "Email",
+    field: "category",
+    headerName: "Category",
     width: 230,
   },
 
   {
-    field: "age",
-    headerName: "Age",
-    width: 100,
+    field: "count",
+    headerName: "Number of products",
+    width: 150,
   },
   {
-    field: "address",
-    headerName: "Address",
-    width: 160,
-    renderCell: (params) => {
-      return (
-        <div className={`cellWithStatus ${params.row.status}`}>
-          {params.row.status}
-        </div>
-      );
-    },
+    field: "price",
+    headerName: "Price",
+    width: 150,
   },
+  // {
+  //   field: "address",
+  //   headerName: "Address",
+  //   width: 160,
+  //   renderCell: (params) => {
+  //     return (
+  //       <div className={`cellWithStatus ${params.row.status}`}>
+  //         {params.row.status}
+  //       </div>
+  //     );
+  //   },
+  // },
 ];
 
 //temporary data
