@@ -16,12 +16,13 @@ import Dashboard from "./pages/Dashboard";
 import Furniture from "./pages/Furniture";
 import Order from "./pages/Order";
 import Contact from "./pages/Contact";
+import Messages from "./pages/Messages";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
   const { currentUser } = useContext(AuthContext);
   const RequireAuth = ({ children }) => {
-    return currentUser ? children : <Navigate to="/login" />;
+    return currentUser ? children : <Navigate to="/admin/login" />;
   };
 
   return (
@@ -41,6 +42,14 @@ function App() {
               element={
                 <RequireAuth>
                   <Home />
+                </RequireAuth>
+              }
+            />
+            <Route
+              path="messages"
+              element={
+                <RequireAuth>
+                  <Messages />
                 </RequireAuth>
               }
             />

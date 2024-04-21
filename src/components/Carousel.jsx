@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 const Carousel = () => {
   return (
     <>
-      <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
+      <div id="carouselHome" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-indicators">
           <button
             type="button"
             data-bs-target="#carouselHome"
             data-bs-slide-to="0"
-            class="active"
+            className="active"
             aria-current="true"
             aria-label="Slide 1"
           ></button>
@@ -29,8 +29,8 @@ const Carousel = () => {
             aria-label="Slide 3"
           ></button>
         </div>
-        <div class="carousel-inner">
-          {/* <div class="carousel-item active" data-bs-interval="4000">
+        <div className="carousel-inner">
+          {/* <div className="carousel-item active" data-bs-interval="4000">
             <div className="relative isolate px-6 pt-0 lg:px-8">
               <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
                 <div className="hidden sm:mb-8 sm:flex sm:justify-center">
@@ -73,7 +73,7 @@ const Carousel = () => {
             </div>
           </div> */}
 
-          <div class="carousel-item active" data-bs-interval="4000">
+          <div className="carousel-item active" data-bs-interval="4000">
             <div className="relative isolate px-6 pt-0 lg:px-8">
               <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
                 <div className="hidden sm:mb-8 sm:flex sm:justify-center">
@@ -115,8 +115,8 @@ const Carousel = () => {
               </div>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            {/* <img src="./img/kif-2.jfif" class="d-block w-100" alt="..." /> */}
+          <div className="carousel-item" data-bs-interval="4000">
+            {/* <img src="./img/kif-2.jfif" className="d-block w-100" alt="..." /> */}
 
             <div className="relative isolate px-6 pt-0 lg:px-8">
               <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
@@ -158,8 +158,8 @@ const Carousel = () => {
               </div>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            {/* <img src="./img/kif-2.jfif" class="d-block w-100" alt="..." /> */}
+          <div className="carousel-item" data-bs-interval="4000">
+            {/* <img src="./img/kif-2.jfif" className="d-block w-100" alt="..." /> */}
 
             <div className="relative isolate px-6 pt-0 lg:px-8">
               <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
@@ -203,22 +203,22 @@ const Carousel = () => {
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselHome"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next"
+          className="carousel-control-next"
           type="button"
           data-bs-target="#carouselHome"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
         </button>
       </div>
     </>

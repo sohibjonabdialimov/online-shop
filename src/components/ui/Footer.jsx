@@ -6,13 +6,13 @@ const Footer = () => {
     <>
       <footer className="bg-blue-100/80 font-sans dark:bg-gray-900">
         <div className="container px-6 py-12 mx-auto">
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 w-100 sm:gap-y-10 lg:grid-cols-5">
-            <div className="sm:col-span-2">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 w-100 sm:gap-y-10 lg:grid-cols-8">
+            <div className="sm:col-span-3">
               <h1 className="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl dark:text-white">
                 Pochta ro'yxatiga obuna bo'ling.
               </h1>
 
-              <div className="flex flex-col mx-auto sm:mx-0 mt-6 space-y-3 md:space-y-0 md:flex-row justify-between sm:w-[80%]">
+              <div className="flex flex-col mx-auto sm:mx-0 mt-6 space-y-3 md:space-y-0 md:flex-row justify-between sm:w-[100%]">
                 <input
                   id="email"
                   type="text"
@@ -26,12 +26,12 @@ const Footer = () => {
               </div>
             </div>
 
-            <div>
+            <div className="sm:col-span-1">
               <p className="font-semibold text-gray-800 dark:text-white">
                 Sayt havolalari
               </p>
 
-              <div className="flex flex-col items-start mt-5 space-y-2">
+              <div className="flex flex-col items-start mt-2 space-y-2">
                 <Link
                   to={"/"}
                   className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"
@@ -53,24 +53,23 @@ const Footer = () => {
               </div>
             </div>
 
-            <div>
+            <div className="sm:col-span-2">
               <div>
                 <p className="font-semibold text-gray-800 dark:text-white">
                   Ish vaqti / Ish tartibi
                 </p>
-                <p className="mt-5 text-gray-600 transition-colors duration-300 dark:text-gray-300 leading-[1.8rem]">
+                <p className="mt-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 leading-[1.8rem]">
                   Ish vaqti har kuni soat 9:00 dan 20:00 gacha. Yetkazib berish
-                  seshanba, shanba kunlari
+                  seshanba, payshanba va shanba kunlari
                 </p>
               </div>
-
             </div>
-            <div>
+            <div className="sm:col-span-2">
               <p className="font-semibold text-gray-800 dark:text-white">
                 Aloqa uchun
               </p>
 
-              <div className="flex flex-col items-start mt-5 space-y-2">
+              <div className="flex flex-col items-start mt-2 space-y-2">
                 <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">
                   +998 (91) 474-78-18
                 </p>

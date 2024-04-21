@@ -1,93 +1,94 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.error_text{
+.error_text {
   font-size: 14px;
   color: red;
   margin-top: 10px;
   display: block;
   text-align: center;
 }
-.send_text{
+.send_text {
   font-size: 16px;
   color: rgb(9, 177, 9);
   margin-top: 10px;
   display: block;
   text-align: center;
 }
-.furniture_ad_card{
+.furniture_ad_card {
   transition: 0.3s;
 }
-.furniture_ad_card img{
+.furniture_ad_card img {
   transition: 0.3s;
 }
-.furniture_ad_card:hover{
+.furniture_ad_card:hover {
   box-shadow: 10px 10px 10px #00000055;
 }
-.furniture_ad_card:hover img{
+.furniture_ad_card:hover img {
   transform: scale(1.1);
 }
-.gallery{ 
+.gallery {
   display: grid;
   gap: 30px;
-  grid-template-areas: "i1 i1 i2 i2 i2 i2 i2 i3 i3 i3 i3 i3"
-  "i4 i4 i4 i4 i4 i5 i5 i5 i5 i5 i6 i6"
-  "i7 i7 i8 i8 i8 i8 i8 i9 i9 i9 i9 i9"
-  "i10 i10 i10 i10 i10 i11 i11 i11 i11 i11 i12 i12";
+  grid-template-areas:
+    "i1 i1 i2 i2 i2 i2 i2 i3 i3 i3 i3 i3"
+    "i4 i4 i4 i4 i4 i5 i5 i5 i5 i5 i6 i6"
+    "i7 i7 i8 i8 i8 i8 i8 i9 i9 i9 i9 i9"
+    "i10 i10 i10 i10 i10 i11 i11 i11 i11 i11 i12 i12";
 }
-.gallery img{
+.gallery img {
   height: 300px;
   transition: 0.3s transform;
 }
-.gallery img:hover{
+.gallery img:hover {
   transform: scale(1.16);
 }
 
-.i1{
+.i1 {
   grid-area: i1;
   width: 100%;
 }
-.i2{
+.i2 {
   grid-area: i2;
   width: 100%;
 }
-.i3{
+.i3 {
   grid-area: i3;
   width: 100%;
 }
-.i4{
+.i4 {
   grid-area: i4;
   width: 100%;
 }
-.i5{
+.i5 {
   grid-area: i5;
   width: 100%;
 }
-.i6{
+.i6 {
   grid-area: i6;
   width: 100%;
 }
-.i7{
+.i7 {
   grid-area: i7;
   width: 100%;
 }
-.i8{
+.i8 {
   grid-area: i8;
   width: 100%;
 }
-.i9{
+.i9 {
   grid-area: i9;
   width: 100%;
 }
-.i10{
+.i10 {
   grid-area: i10;
   width: 100%;
 }
-.i11{
+.i11 {
   grid-area: i11;
   width: 100%;
 }
-.i12{
+.i12 {
   grid-area: i12;
   width: 100%;
 }
@@ -109,6 +110,35 @@
 #carouselHome .carousel-control-next {
   width: 80px;
 }
-.carousel-indicators button{
+.carousel-indicators button {
   background-color: #333 !important;
 }
+
+.home {
+  display: flex;
+}
+.home .homeContainer {
+  flex: 6;
+}
+.home .listContainer {
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 20px;
+  margin: 20px;
+}
+.home .listTitle {
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.wrap .wrap_item {
+  border: 2px solid #aaa;
+  padding: 5px 20px;
+  margin-bottom: 5px;
+  border-radius: 15px 15px 15px 0;
+  display: flex;
+  gap: 15px;
+}
+
+
