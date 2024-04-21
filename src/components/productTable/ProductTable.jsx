@@ -44,7 +44,7 @@ const ProductTable = () => {
       renderCell: (params) => {
         return (
           <div className="cellAction">
-            <Link to="/users/test" style={{ textDecoration: "none" }}>
+            <Link to="/admin/users/test" style={{ textDecoration: "none" }}>
               <div className="viewButton">View</div>
             </Link>
             <div
@@ -62,7 +62,7 @@ const ProductTable = () => {
     <div className="datatable">
       <div className="datatableTitle">
         Add New Product
-        <Link to="/products/new" className="link">
+        <Link to="/admin/products/new" className="link">
           Add New Product
         </Link>
       </div>

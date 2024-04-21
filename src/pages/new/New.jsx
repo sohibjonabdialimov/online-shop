@@ -68,15 +68,6 @@ const New = ({ inputs, title }) => {
     e.preventDefault();
 
     try {
-      // const res = await createUserWithEmailAndPassword(
-      //   auth,
-      //   data.email,
-      //   data.password
-      // );
-      // await setDoc(doc(db, "users", res.user.uid), {
-      //   ...data,
-      //   timeStamp: serverTimestamp(),
-      // });
       await addDoc(collection(db, "products"), {
         ...data,
         timeStamp: serverTimestamp(),
@@ -94,7 +85,7 @@ const New = ({ inputs, title }) => {
       <div className="newContainer">
         <Navbar />
         <div className="top">
-          <h1>{title}</h1>
+          <h1 className="pt-5 pl-5">{title}</h1>
         </div>
         <div className="bottom1">
           <div className="right1">
