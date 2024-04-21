@@ -11,8 +11,7 @@ const Furniture = () => {
       try {
         const querySnapshot = await getDocs(collection(db, "products"));
         querySnapshot.forEach((doc) => {
-          console.log(doc);
-          list.push({id: doc.id, ...doc.data()});
+          list.push({ id: doc.id, ...doc.data() });
         });
         setData(list);
       } catch (err) {
@@ -24,9 +23,26 @@ const Furniture = () => {
   console.log(data);
   return (
     <>
-      <div className="h-[90dvh]">
-      <div>Furniture</div>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nemo consectetur iure esse doloribus maiores atque corrupti, ab dolorum mollitia molestias suscipit eaque perferendis totam cupiditate non itaque alias magni.</p>
+      <div className="min-h-[90dvh] px-6 lg:px-32 mx-auto">
+        <h1 className="common_title">Mebellar to'plami</h1>
+        
+        <div className="furniture_wrap">
+          {data.map((item) => {
+            return (
+              <div className="furniture_item">
+                <div className="furniture_img">
+                  <img src={item.img} alt="" />
+                </div>
+                <div className="furniture_content">
+                  <h3>{item.category}</h3>
+                  <p><span>Nomi: </span>{item.name}</p>
+                  <p><span>Narxi: </span>{item.price}</p>
+                  <p><span>Qolgan mahsulotlar soni: </span>{item.count}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </>
   );

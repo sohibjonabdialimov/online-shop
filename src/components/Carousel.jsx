@@ -30,56 +30,17 @@ const Carousel = () => {
           ></button>
         </div>
         <div className="carousel-inner">
-          {/* <div className="carousel-item active" data-bs-interval="4000">
-            <div className="relative isolate px-6 pt-0 lg:px-8">
-              <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
-                <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                  <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                    Announcing our next round of funding.
-                    <a href="#" className="font-semibold text-indigo-600">
-                      <span
-                        className="absolute inset-0"
-                        aria-hidden="true"
-                      ></span>
-                      Read more <span aria-hidden="true">&rarr;</span>
-                    </a>
-                  </div>
-                </div>
-                <div className="text-center">
-                  <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    Data to enrich your online business
-                  </h1>
-                  <p className="mt-6 text-lg leading-8 text-gray-600">
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                    qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                    occaecat fugiat aliqua.
-                  </p>
-                  <div className="mt-10 flex items-center justify-center gap-x-6">
-                    <a
-                      href="#"
-                      className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    >
-                      Get started
-                    </a>
-                    <a
-                      href="#"
-                      className="text-sm font-semibold leading-6 text-gray-900"
-                    >
-                      Learn more <span aria-hidden="true">→</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
-
           <div className="carousel-item active" data-bs-interval="4000">
             <div className="relative isolate px-6 pt-0 lg:px-8">
               <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
                 <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                    Siz xohlagan ko'rinishdagi zamonaviy mebellar to'plami.&nbsp;&nbsp;
-                    <Link to={"/furnitures"} className="font-semibold text-indigo-600">
+                  <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                    Siz xohlagan ko'rinishdagi zamonaviy mebellar
+                    to'plami.&nbsp;&nbsp;
+                    <Link
+                      to={"/order"}
+                      className="font-semibold text-indigo-600"
+                    >
                       <span
                         className="absolute inset-0"
                         aria-hidden="true"
@@ -97,9 +58,8 @@ const Carousel = () => {
                     va yoritish mahsulotlari
                   </p>
                   <div className="mt-10 flex items-center justify-center gap-x-6">
-
                     <Link
-                      to={"/furniture"}
+                      to={"/furnitures"}
                       className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Sotib olish
@@ -121,9 +81,13 @@ const Carousel = () => {
             <div className="relative isolate px-6 pt-0 lg:px-8">
               <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
                 <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                    Siz xohlagan ko'rinishdagi zamonaviy mebellar to'plami.&nbsp;&nbsp;
-                    <Link to={"/furnitures"} className="font-semibold text-indigo-600">
+                  <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                    Siz xohlagan ko'rinishdagi zamonaviy mebellar
+                    to'plami.&nbsp;&nbsp;
+                    <Link
+                      to={"/order"}
+                      className="font-semibold text-indigo-600"
+                    >
                       <span
                         className="absolute inset-0"
                         aria-hidden="true"
@@ -141,12 +105,12 @@ const Carousel = () => {
                     kunlari tezlik bilan yetkazib beriladi.
                   </p>
                   <div className="mt-10 flex items-center justify-center gap-x-6">
-                    <a
-                      href="#"
+                    <Link
+                      to={"/furnitures"}
                       className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Boshlash
-                    </a>
+                    </Link>
                     <a
                       href="#"
                       className="text-sm font-semibold leading-6 text-gray-900"
@@ -164,9 +128,13 @@ const Carousel = () => {
             <div className="relative isolate px-6 pt-0 lg:px-8">
               <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
                 <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                    Siz xohlagan ko'rinishdagi zamonaviy mebellar to'plami.&nbsp;&nbsp;
-                    <Link to={"/furnitures"} className="font-semibold text-indigo-600">
+                  <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                    Siz xohlagan ko'rinishdagi zamonaviy mebellar
+                    to'plami.&nbsp;&nbsp;
+                    <Link
+                      to={"/order"}
+                      className="font-semibold text-indigo-600"
+                    >
                       <span
                         className="absolute inset-0"
                         aria-hidden="true"
@@ -184,12 +152,12 @@ const Carousel = () => {
                     Mebellearimiz odamlar ishonchini oqlab kelmoqda ...
                   </p>
                   <div className="mt-10 flex items-center justify-center gap-x-6">
-                    <a
-                      href="#"
+                    <Link
+                      to={"/furnitures"}
                       className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Boshlash
-                    </a>
+                    </Link>
                     <a
                       href="#"
                       className="text-sm font-semibold leading-6 text-gray-900"
@@ -208,7 +176,10 @@ const Carousel = () => {
           data-bs-target="#carouselHome"
           data-bs-slide="prev"
         >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
           <span className="visually-hidden">Previous</span>
         </button>
         <button
@@ -217,7 +188,10 @@ const Carousel = () => {
           data-bs-target="#carouselHome"
           data-bs-slide="next"
         >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
           <span className="visually-hidden">Next</span>
         </button>
       </div>

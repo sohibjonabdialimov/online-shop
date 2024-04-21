@@ -5,13 +5,10 @@ import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUpload
 import {
   addDoc,
   collection,
-  doc,
   serverTimestamp,
-  setDoc,
 } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import { auth, db, storage } from "../../firebase";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { db, storage } from "../../firebase";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { useNavigate } from "react-router-dom";
 
@@ -103,7 +100,7 @@ const New = ({ inputs, title }) => {
                     />
                   </div>
                   <label htmlFor="file">
-                    Image: <DriveFolderUploadOutlinedIcon className="icon" />
+                    Rasm: <DriveFolderUploadOutlinedIcon className="icon" />
                   </label>
                   <input
                     type="file"
@@ -126,7 +123,7 @@ const New = ({ inputs, title }) => {
                 </div>
               ))}
               <button disabled={per !== null && per < 100} type="submit">
-                Send
+                Jo'natish
               </button>
             </form>
           </div>

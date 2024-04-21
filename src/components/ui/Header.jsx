@@ -12,9 +12,9 @@ const Header = () => {
   }
   return (
     <>
-      <header className="relative z-50">
+      <header className="relative z-50 container">
         <nav
-          className="flex items-center justify-between p-6 lg:px-8"
+          className="flex items-center justify-between p-6 lg:px-32"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
@@ -69,7 +69,7 @@ const Header = () => {
               to={"/order"}
               className="text-base font-semibold leading-6 text-gray-900"
             >
-              Buyurtmalar
+              Dizaynlar
             </Link>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">

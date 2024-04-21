@@ -41,7 +41,7 @@ const Contact = () => {
               className="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2"
               htmlFor="grid-password"
             >
-              Ismingiz
+              To'liq ism sharifingiz
             </label>
             <input
             onChange={handleInput}
@@ -57,7 +57,7 @@ const Contact = () => {
               className="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2"
               htmlFor="grid-password"
             >
-              E-mail
+              E-mail yoki telefon raqamingiz
             </label>
             <input
             onChange={handleInput}

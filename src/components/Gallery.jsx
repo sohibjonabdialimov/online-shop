@@ -15,7 +15,7 @@ import i12 from "../assets/12.jpg";
 const Gallery = () => {
   return (
     <div className="p-24">
-      <h1 className="text-#1F2937 text-4xl mb-12 font-semibold">Uy uchun g'oyalar</h1>
+      <h1 className="text-#1F2937 text-4xl mb-12 font-semibold">Zamonaviy mebellar</h1>
       <div className="gallery">
         <img className="i1" src={i1} alt="" />
         <img className="i2" src={i2} alt="" />
