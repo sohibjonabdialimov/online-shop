@@ -17,6 +17,7 @@ import Furniture from "./pages/Furniture";
 import Order from "./pages/Order";
 import Contact from "./pages/Contact";
 import Messages from "./pages/Messages";
+import Installment from "./pages/installment/Installment";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -34,6 +35,7 @@ function App() {
             <Route path="furnitures" element={<Furniture />} />
             <Route path="order" element={<Order />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="installment" element={<Installment />} />
           </Route>
           <Route path="/admin">
             <Route path="login" element={<Login />} />

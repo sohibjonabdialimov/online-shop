@@ -71,6 +71,12 @@ const Header = () => {
             >
               Dizaynlar
             </Link>
+            <Link
+              to={"/installment"}
+              className="text-base font-semibold leading-6 text-gray-900"
+            >
+              To'lov rejasi
+            </Link>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <Link
