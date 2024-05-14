@@ -12,7 +12,6 @@ const firebaseConfig = {
   appId: "1:355944258190:web:bb4e188d06151e746187df",
 };
 
-// console.log(process.env.REACT_APP_FIREBASE_KEY);
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);

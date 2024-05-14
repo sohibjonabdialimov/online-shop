@@ -16,7 +16,7 @@ const Datatable = () => {
         const querySnapshot = await getDocs(collection(db, "users"));
         querySnapshot.forEach((doc) => {
           console.log(doc);
-          list.push({id: doc.id, ...doc.data()});
+          list.push({ id: doc.id, ...doc.data() });
         });
         setData(list);
       } catch (err) {
@@ -26,12 +26,11 @@ const Datatable = () => {
     fetchData();
   }, []);
 
-
   const handleDelete = async (id) => {
-    try{
+    try {
       await deleteDoc(doc(db, "users", id));
       setData(data.filter((item) => item.id !== id));
-    }catch(err){
+    } catch (err) {
       console.log(err);
     }
   };

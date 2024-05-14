@@ -76,30 +76,4 @@ export const adminInputs = [
     },
   ];
 
-  // export const userInputs = [
-  //   {
-  //     id: "fullname",
-  //     label: "Title",
-  //     type: "text",
-  //     placeholder: "Apple Macbook Pro",
-  //   },
-  //   {
-  //     id: "email",
-  //     label: "Description",
-  //     type: "text",
-  //     placeholder: "Description",
-  //   },
-  //   {
-  //     id: "phone",
-  //     label: "Phone",
-  //     type: "text",
-  //     placeholder: "Description",
-  //   },
-  //   {
-  //     id: "comment",
-  //     label: "Sizning fikringiz",
-  //     type: "text",
-  //     placeholder: "Computers",
-  //   }
-  // ];
   
