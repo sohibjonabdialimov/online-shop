@@ -1,9 +1,13 @@
-import React, { useRef } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const hidden = useRef();
-
+  const [pathname, setPathname] = useState(window.location.pathname);
+  useEffect(() => {
+    console.log("ishla");
+    setPathname(window.location.pathname);
+  }, [window.location.pathname]);
   function openNavbarFunction() {
     hidden.current?.classList.remove("hidden");
   }
@@ -53,38 +57,38 @@ const Header = () => {
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
-            <Link
+            <NavLink
               to={"/"}
-              className="text-base font-semibold leading-6 text-gray-900"
+              className={`text-base font-mono leading-6 text-gray-900`}
             >
               Bosh sahifa
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to={"/furnitures"}
-              className="text-base font-semibold leading-6 text-gray-900"
+              className="text-base font-mono leading-6 text-gray-900"
             >
               Mebellar
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to={"/order"}
-              className="text-base font-semibold leading-6 text-gray-900"
+              className="text-base font-mono leading-6 text-gray-900"
             >
               Dizaynlar
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to={"/installment"}
-              className="text-base font-semibold leading-6 text-gray-900"
+              className="text-base font-mono leading-6 text-gray-900"
             >
               To'lov rejasi
-            </Link>
+            </NavLink>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Link
+            <NavLink
               to={"/contact"}
               className="text-base font-semibold leading-6 hover:bg-slate-600 transition-colors bg-[#1F2937] text-white py-2 px-5 rounded"
             >
-              Biz bilan bog'laning  <span aria-hidden="true">&rarr;</span>
-            </Link>
+              Biz bilan bog'laning <span aria-hidden="true">&rarr;</span>
+            </NavLink>
           </div>
         </nav>
         <div

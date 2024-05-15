@@ -3,7 +3,7 @@ import { Home1, Home2, Home3 } from "../assets/home";
 
 const Cards = () => {
   return (
-    <div className="p-24">
+    <div className="p-24 pb-10">
       <h1 className="text-#1F2937 text-4xl mb-12 font-semibold">
         To'liq to'plamdagi mebellar
       </h1>

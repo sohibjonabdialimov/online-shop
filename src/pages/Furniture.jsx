@@ -29,7 +29,7 @@ const Furniture = () => {
         <div className="furniture_wrap">
           {data.map((item) => {
             return (
-              <div className="furniture_item">
+              <div key={data.id} className="furniture_item">
                 <div className="furniture_img">
                   <img src={item.img} alt="" />
                 </div>

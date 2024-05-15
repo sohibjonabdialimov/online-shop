@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Carousel = () => {
   return (
     <>
-      <div id="carouselHome" className="carousel slide" data-bs-ride="carousel">
+      <div id="carouselHome" className="carousel slide bg_img" data-bs-ride="carousel">
         <div className="carousel-indicators">
           <button
             type="button"
@@ -34,12 +34,12 @@ const Carousel = () => {
             <div className="relative isolate px-6 pt-0 lg:px-8">
               <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
                 <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                  <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                  <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-white hover:ring-slate-200">
                     Siz xohlagan ko'rinishdagi zamonaviy mebellar
                     to'plami.&nbsp;&nbsp;
                     <Link
                       to={"/order"}
-                      className="font-semibold text-indigo-600"
+                      className="font-semibold text-cyan-300"
                     >
                       <span
                         className="absolute inset-0"
@@ -50,10 +50,10 @@ const Carousel = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                  <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
                     Interyeringiz yorqin bo'lsin
                   </h1>
-                  <p className="mt-6 text-lg leading-8 text-gray-600">
+                  <p className="mt-6 text-lg leading-8 text-white">
                     Chegirmalar bilan har qanday xona uchun zamonaviy mebellar
                     va yoritish mahsulotlari
                   </p>
@@ -66,7 +66,7 @@ const Carousel = () => {
                     </Link>
                     <a
                       href="#"
-                      className="text-sm font-semibold leading-6 text-gray-900"
+                      className="text-sm font-semibold leading-6 text-cyan-300 border-spacing-1 border-cyan-300"
                     >
                       Ko'proq ko'rish <span aria-hidden="true">→</span>
                     </a>
@@ -81,12 +81,12 @@ const Carousel = () => {
             <div className="relative isolate px-6 pt-0 lg:px-8">
               <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
                 <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                  <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                  <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-white hover:ring-slate-200">
                     Siz xohlagan ko'rinishdagi zamonaviy mebellar
                     to'plami.&nbsp;&nbsp;
                     <Link
                       to={"/order"}
-                      className="font-semibold text-indigo-600"
+                      className="font-semibold text-cyan-300"
                     >
                       <span
                         className="absolute inset-0"
@@ -97,10 +97,10 @@ const Carousel = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                  <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
                     Tez va sifatli ko'rinishda yetkazib beramiz!
                   </h1>
-                  <p className="mt-6 text-lg leading-8 text-gray-600">
+                  <p className="mt-6 text-lg leading-8 text-white">
                     Siz tanlagan mebellarni seshanba, payshanba va shanba
                     kunlari tezlik bilan yetkazib beriladi.
                   </p>
@@ -113,7 +113,7 @@ const Carousel = () => {
                     </Link>
                     <a
                       href="#"
-                      className="text-sm font-semibold leading-6 text-gray-900"
+                      className="text-sm font-semibold leading-6 text-cyan-300 c_border"
                     >
                       Ko'proq ko'rish <span aria-hidden="true">→</span>
                     </a>
@@ -128,12 +128,12 @@ const Carousel = () => {
             <div className="relative isolate px-6 pt-0 lg:px-8">
               <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
                 <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                  <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                  <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-white hover:ring-slate-200">
                     Siz xohlagan ko'rinishdagi zamonaviy mebellar
                     to'plami.&nbsp;&nbsp;
                     <Link
                       to={"/order"}
-                      className="font-semibold text-indigo-600"
+                      className="font-semibold text-cyan-300"
                     >
                       <span
                         className="absolute inset-0"
@@ -144,10 +144,10 @@ const Carousel = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                  <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
                     Mebellar sifatiga 100% javob beramiz!
                   </h1>
-                  <p className="mt-6 text-lg leading-8 text-gray-600">
+                  <p className="mt-6 text-lg leading-8 text-white">
                     Zamonaviy va dunyo standartlariga mos mebellar to'plami.
                     Mebellearimiz odamlar ishonchini oqlab kelmoqda ...
                   </p>
@@ -160,7 +160,7 @@ const Carousel = () => {
                     </Link>
                     <a
                       href="#"
-                      className="text-sm font-semibold leading-6 text-gray-900"
+                      className="text-sm font-semibold leading-6 text-cyan-300 c_border"
                     >
                       Ko'proq ko'rish<span aria-hidden="true">→</span>
                     </a>
