@@ -6,7 +6,7 @@ import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import Add from "./pages/add/Add";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { adminInputs, productInputs, userInputs } from "./formSource";
+import { adminInputs, productInputs } from "./formSource";
 import "./style/dark.scss";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
@@ -15,9 +15,10 @@ import UsersLayout from "./layouts/UserLayout";
 import Dashboard from "./pages/Dashboard";
 import Furniture from "./pages/Furniture";
 import Order from "./pages/Order";
-import Contact from "./pages/Contact";
 import Messages from "./pages/Messages";
 import Installment from "./pages/installment/Installment";
+import Feedback from "./pages/Feedback";
+import Contact from "./pages/contact/Contact";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -35,6 +36,7 @@ function App() {
             <Route path="furnitures" element={<Furniture />} />
             <Route path="order" element={<Order />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="feedback" element={<Feedback />} />
             <Route path="installment" element={<Installment />} />
           </Route>
           <Route path="/admin">

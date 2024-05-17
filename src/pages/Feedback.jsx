@@ -1,7 +1,7 @@
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import React, { useState } from "react";
 import { db } from "../firebase";
-const Contact = () => {
+const Feedback = () => {
   const [data, setData] = useState([]);
   const [send, setSend] = useState(false);
 
@@ -102,4 +102,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Feedback;

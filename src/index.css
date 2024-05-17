@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 .bg_img{
-  /* background-image: url("./assets/home4.webp"); */
   background-image: linear-gradient(
     to bottom,
     rgb(0, 0, 0, 0.6),
@@ -252,7 +251,7 @@
   font-size: 40px;
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 .furniture_wrap {
   display: grid;

@@ -1,13 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const hidden = useRef();
-  const [pathname, setPathname] = useState(window.location.pathname);
-  useEffect(() => {
-    console.log("ishla");
-    setPathname(window.location.pathname);
-  }, [window.location.pathname]);
   function openNavbarFunction() {
     hidden.current?.classList.remove("hidden");
   }
@@ -56,7 +51,7 @@ const Header = () => {
               </svg>
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          <div className="hidden lg:flex lg:gap-x-10">
             <NavLink
               to={"/"}
               className={`text-base font-mono leading-6 text-gray-900`}
@@ -81,13 +76,19 @@ const Header = () => {
             >
               To'lov rejasi
             </NavLink>
+            <NavLink
+              to={"/contact"}
+              className="text-base font-mono leading-6 text-gray-900"
+            >
+              Aloqa
+            </NavLink>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <NavLink
-              to={"/contact"}
+              to={"/feedback"}
               className="text-base font-semibold leading-6 hover:bg-slate-600 transition-colors bg-[#1F2937] text-white py-2 px-5 rounded"
             >
-              Biz bilan bog'laning <span aria-hidden="true">&rarr;</span>
+              Fikr-mulohazalar uchun<span aria-hidden="true">&rarr;</span>
             </NavLink>
           </div>
         </nav>

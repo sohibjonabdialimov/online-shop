@@ -25,19 +25,28 @@ const Furniture = () => {
     <>
       <div className="min-h-[90dvh] px-6 lg:px-32 mx-auto">
         <h1 className="common_title">Mebellar to'plami</h1>
-        
+
         <div className="furniture_wrap">
           {data.map((item) => {
             return (
-              <div key={data.id} className="furniture_item">
+              <div key={item.id} className="furniture_item">
                 <div className="furniture_img">
                   <img src={item.img} alt="" />
                 </div>
                 <div className="furniture_content">
                   <h3>{item.category}</h3>
-                  <p><span>Nomi: </span>{item.name}</p>
-                  <p><span>Narxi: </span>{item.price}</p>
-                  <p><span>Qolgan mahsulotlar soni: </span>{item.count}</p>
+                  <p>
+                    <span>Nomi: </span>
+                    {item.name}
+                  </p>
+                  <p>
+                    <span>Narxi: </span>
+                    {item.price}
+                  </p>
+                  <p>
+                    <span>Qolgan mahsulotlar soni: </span>
+                    {item.count}
+                  </p>
                 </div>
               </div>
             );
