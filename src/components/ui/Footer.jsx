@@ -6,8 +6,8 @@ const Footer = () => {
     <>
       <footer className="bg-slate-800 font-sans px-24">
         <div className="container px-32 py-12">
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 w-100 sm:gap-y-10 lg:grid-cols-8">
-            <div className="sm:col-span-3">
+          <div className="grid grid-cols-1 gap-6 justify-between sm:grid-cols-2 w-100 sm:gap-y-10 lg:grid-cols-12">
+            <div className="sm:col-span-4">
               <h1 className="max-w-lg text-xl font-semibold tracking-tight text-white xl:text-2xl">
                 Pochta ro'yxatiga obuna bo'ling.
               </h1>
@@ -26,7 +26,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="sm:col-span-1">
+            <div className="sm:col-span-2">
               <p className="font-semibold text-white">
                 Sayt havolalari
               </p>
@@ -48,23 +48,29 @@ const Footer = () => {
                   to={"/contact"}
                   className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"
                 >
-                  Biz bilan bog'laning
+                  Aloqa
+                </Link>
+                <Link
+                  to={"/contact"}
+                  className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"
+                >
+                  Fikr-mulohazalar
                 </Link>
               </div>
             </div>
 
-            <div className="sm:col-span-2">
+            <div className="sm:col-span-3">
               <div>
                 <p className="font-semibold text-white dark:text-white">
                   Ish vaqti / Ish tartibi
                 </p>
                 <p className="mt-2 text-white transition-colors duration-300 dark:text-gray-300 leading-[1.8rem]">
-                  Ish vaqti har kuni soat 9:00 dan 20:00 gacha. Yetkazib berish
+                  Ish vaqti har kuni soat 08:00 dan 22:00 gacha. Yetkazib berish
                   seshanba, payshanba va shanba kunlari
                 </p>
               </div>
             </div>
-            <div className="sm:col-span-2">
+            <div className="sm:col-span-3">
               <p className="font-semibold text-white dark:text-white">
                 Aloqa uchun
               </p>

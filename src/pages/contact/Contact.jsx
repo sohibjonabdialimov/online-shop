@@ -42,7 +42,7 @@ const Contact = () => {
             <img src={clock} alt="" />
           </div>
           <div className="contact_content">
-            <h3>Ish tartibi:</h3>
+            <h3>Ish vaqti / Ish tartibi</h3>
             <p>Har kuni 08:00 dan 22:00 gacha</p>
           </div>
         </div>
@@ -51,7 +51,7 @@ const Contact = () => {
             <img src={delivery} alt="" />
           </div>
           <div className="contact_content">
-            <h3>Yetkazib berish:</h3>
+            <h3>Yetkazib berish kunlari:</h3>
             <p>Seshanba, payshanba va shanba kunlari</p>
           </div>
         </div>
