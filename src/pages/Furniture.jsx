@@ -2,6 +2,9 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
+import heart from "../assets/heart.png";
+import fill_heart from "../assets/fill_heart.png";
+import basket from "../assets/basket.png";
 const Furniture = () => {
   const [data, setData] = useState([]);
 
@@ -32,6 +35,12 @@ const Furniture = () => {
               <div key={item.id} className="furniture_item">
                 <div className="furniture_img">
                   <img src={item.img} alt="" />
+                  {false ? (
+                    <img src={fill_heart} alt="" />
+                  ) : (
+                    <img src={heart} alt="" />
+                  )}
+                  <img src={basket} alt="" />
                 </div>
                 <div className="furniture_content">
                   <h3>{item.category}</h3>

@@ -1,5 +1,9 @@
 import React from "react";
 import { Home1, Home2, Home3 } from "../assets/home";
+import a1 from "../assets/a5.jpg"
+import a2 from "../assets/a6.webp"
+import a3 from "../assets/a4.jpg"
+import a4 from "../assets/a3.jpg"
 
 const Cards = () => {
   return (
@@ -13,8 +17,8 @@ const Cards = () => {
           <div className="relative pt-10 px-8 flex items-center justify-center">
             <div className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"></div>
             <img
-              className="relative w-[100%] rounded"
-              src="https://mebel.uz/image/cache/catalog/%20%20OPTIMA-1588050562-228x228.jpg"
+              className="relative w-[100%] rounded h-96"
+              src={a1}
               alt=""
             />
           </div>
@@ -22,7 +26,7 @@ const Cards = () => {
             <span className="block opacity-75 -mb-1">Indoor</span>
             <div className="flex justify-between">
               <span className="block font-semibold text-xl">
-              Ofislar uchun to'plam
+              Oq rangdagi to'plam
               </span>
               <span className="bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">
               15 000 000 so'm
@@ -35,8 +39,8 @@ const Cards = () => {
           <div className="relative pt-10 px-8 flex items-center justify-center">
             <div className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"></div>
             <img
-              className="relative w-[100%] rounded"
-              src="https://mebel.uz/image/cache/catalog/%20%20-1589972207-228x228.jpg"
+              className="relative w-[100%] rounded h-96"
+              src={a2}
               alt=""
             />
           </div>
@@ -44,10 +48,10 @@ const Cards = () => {
             <span className="block opacity-75 -mb-1">Outdoor</span>
             <div className="flex justify-between">
               <span className="block font-semibold text-xl">
-              Yotoqxona uchun to'plam
+              Ko'k rangdagi to'plam
               </span>
               <span className="bg-white rounded-full text-teal-500 text-xs font-bold px-3 py-2 leading-none flex items-center">
-                20 000 000 so'm
+                18 000 000 so'm
               </span>
             </div>
           </div>
@@ -57,8 +61,8 @@ const Cards = () => {
           <div className="relative pt-10 px-8 flex items-center justify-center">
             <div className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"></div>
             <img
-              className="relative w-[100%] rounded"
-              src="https://mebel.uz/image/cache/catalog/%20Paris%20%20%20+%204%20-1588838200-228x228.jpg"
+              className="relative w-[100%] rounded h-96"
+              src={a3}
               alt=""
             />
           </div>
@@ -66,10 +70,10 @@ const Cards = () => {
             <span className="block opacity-75 -mb-1">Oak Tree</span>
             <div className="flex justify-between">
               <span className="block font-semibold text-xl">
-                Oshxona uchun to'plam
+                Qora rangdagi to'plam
               </span>
               <span className="bg-white rounded-full text-purple-500 text-xs font-bold px-3 py-2 leading-none flex items-center">
-                10 000 000 so'm
+                20 000 000 so'm
               </span>
             </div>
           </div>

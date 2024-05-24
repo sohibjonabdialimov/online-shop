@@ -6,7 +6,11 @@ import { Link } from "react-router-dom";
 const Carousel = () => {
   return (
     <>
-      <div id="carouselHome" className="carousel slide bg_img" data-bs-ride="carousel">
+      <div
+        id="carouselHome"
+        className="carousel slide bg_img"
+        data-bs-ride="carousel"
+      >
         <div className="carousel-indicators">
           <button
             type="button"
@@ -37,15 +41,12 @@ const Carousel = () => {
                   <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-white hover:ring-slate-200">
                     Siz xohlagan ko'rinishdagi zamonaviy mebellar
                     to'plami.&nbsp;&nbsp;
-                    <Link
-                      to={"/order"}
-                      className="font-semibold text-cyan-300"
-                    >
+                    <Link to={"/order"} className="font-semibold text-cyan-300">
                       <span
                         className="absolute inset-0"
                         aria-hidden="true"
                       ></span>
-                      Ko'proq ko'rish <span aria-hidden="true">&rarr;</span>
+                      Dizaynlarni ko'rish <span aria-hidden="true">&rarr;</span>
                     </Link>
                   </div>
                 </div>
@@ -59,17 +60,17 @@ const Carousel = () => {
                   </p>
                   <div className="mt-10 flex items-center justify-center gap-x-6">
                     <Link
-                      to={"/furnitures"}
-                      className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      to={"/contact"}
+                      className="rounded-md bg-cyan-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-cyan-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-cyan-700"
                     >
-                      Sotib olish
+                      Buyurtma berish
                     </Link>
-                    <a
-                      href="#"
+                    <Link
+                      to={"/furnitures"}
                       className="text-sm font-semibold leading-6 text-cyan-300 border-spacing-1 border-cyan-300"
                     >
                       Ko'proq ko'rish <span aria-hidden="true">→</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -84,15 +85,12 @@ const Carousel = () => {
                   <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-white hover:ring-slate-200">
                     Siz xohlagan ko'rinishdagi zamonaviy mebellar
                     to'plami.&nbsp;&nbsp;
-                    <Link
-                      to={"/order"}
-                      className="font-semibold text-cyan-300"
-                    >
+                    <Link to={"/order"} className="font-semibold text-cyan-300">
                       <span
                         className="absolute inset-0"
                         aria-hidden="true"
                       ></span>
-                      Ko'proq ko'rish <span aria-hidden="true">&rarr;</span>
+                      Dizaynlarni ko'rish <span aria-hidden="true">&rarr;</span>
                     </Link>
                   </div>
                 </div>
@@ -106,17 +104,17 @@ const Carousel = () => {
                   </p>
                   <div className="mt-10 flex items-center justify-center gap-x-6">
                     <Link
-                      to={"/furnitures"}
-                      className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      to={"/contact"}
+                      className="rounded-md bg-cyan-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-cyan-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-cyan-700"
                     >
-                      Boshlash
+                      Buyurtma berish
                     </Link>
-                    <a
-                      href="#"
-                      className="text-sm font-semibold leading-6 text-cyan-300 c_border"
+                    <Link
+                      to={"/furnitures"}
+                      className="text-sm font-semibold leading-6 text-cyan-300 border-spacing-1 border-cyan-300"
                     >
                       Ko'proq ko'rish <span aria-hidden="true">→</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -131,15 +129,12 @@ const Carousel = () => {
                   <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-white hover:ring-slate-200">
                     Siz xohlagan ko'rinishdagi zamonaviy mebellar
                     to'plami.&nbsp;&nbsp;
-                    <Link
-                      to={"/order"}
-                      className="font-semibold text-cyan-300"
-                    >
+                    <Link to={"/order"} className="font-semibold text-cyan-300">
                       <span
                         className="absolute inset-0"
                         aria-hidden="true"
                       ></span>
-                      Ko'proq ko'rish <span aria-hidden="true">&rarr;</span>
+                      Dizaynlarni ko'rish <span aria-hidden="true">&rarr;</span>
                     </Link>
                   </div>
                 </div>
@@ -153,17 +148,17 @@ const Carousel = () => {
                   </p>
                   <div className="mt-10 flex items-center justify-center gap-x-6">
                     <Link
-                      to={"/furnitures"}
-                      className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      to={"/contact"}
+                      className="rounded-md bg-cyan-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-cyan-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-cyan-700"
                     >
-                      Boshlash
+                      Buyurtma berish
                     </Link>
-                    <a
-                      href="#"
-                      className="text-sm font-semibold leading-6 text-cyan-300 c_border"
+                    <Link
+                      to={"/furnitures"}
+                      className="text-sm font-semibold leading-6 text-cyan-300 border-spacing-1 border-cyan-300"
                     >
-                      Ko'proq ko'rish<span aria-hidden="true">→</span>
-                    </a>
+                      Ko'proq ko'rish <span aria-hidden="true">→</span>
+                    </Link>
                   </div>
                 </div>
               </div>

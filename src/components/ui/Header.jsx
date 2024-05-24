@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
+import basket from "../../assets/basket.png";
+import saved from "../../assets/heart.png";
 
 const Header = () => {
   const hidden = useRef();
@@ -13,7 +15,7 @@ const Header = () => {
     <>
       <header className="relative z-50 container">
         <nav
-          className="flex items-center justify-between p-6 lg:px-32"
+          className="flex items-center justify-between p-6 lg:px-28"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
@@ -51,7 +53,7 @@ const Header = () => {
               </svg>
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-10">
+          <div className="hidden lg:flex lg:gap-x-8 justify-between items-center">
             <NavLink
               to={"/"}
               className={`text-base font-mono leading-6 text-gray-900`}
@@ -65,7 +67,7 @@ const Header = () => {
               Mebellar
             </NavLink>
             <NavLink
-              to={"/order"}
+              to={"/design"}
               className="text-base font-mono leading-6 text-gray-900"
             >
               Dizaynlar
@@ -81,6 +83,14 @@ const Header = () => {
               className="text-base font-mono leading-6 text-gray-900"
             >
               Aloqa
+            </NavLink>
+            <NavLink to={"/order"} className="w-[30px] h-[30px] header_img">
+              <img className="object-cover" src={basket} alt="" />
+              <p>0</p>
+            </NavLink>
+            <NavLink to={"/saved"} className="w-[30px] h-[30px] header_img">
+              <img className="object-cover" src={saved} alt="" />
+              <p>0</p>
             </NavLink>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -149,10 +159,10 @@ const Header = () => {
                     Mebellar
                   </Link>
                   <Link
-                    to={"/order"}
+                    to={"/design"}
                     className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Buyurtmalar
+                    Dizaynlar
                   </Link>
                   <Link
                     to={"/contact"}
@@ -160,6 +170,12 @@ const Header = () => {
                   >
                     Biz bilan bog'laning
                   </Link>
+                  {/* <Link
+                    to={"/contact"}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    <img src={basket} alt="" />
+                  </Link> */}
                 </div>
               </div>
             </div>

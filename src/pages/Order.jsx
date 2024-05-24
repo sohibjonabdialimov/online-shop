@@ -1,47 +1,265 @@
-import i1 from "../assets/i1.jpg"
-import i2 from "../assets/i2.jpg"
-import i3 from "../assets/i3.jpg"
-import i4 from "../assets/i4.jpg"
-import i5 from "../assets/i5.jpg"
-import i6 from "../assets/i6.jpg"
-import i7 from "../assets/i7.jpg"
-import i8 from "../assets/i8.jpg"
-import i9 from "../assets/i9.jpg"
-import i10 from "../assets/i10.jpg"
-import i11 from "../assets/i11.jpg"
-import i12 from "../assets/i12.jpg"
-import i13 from "../assets/i13.jpg"
-import i14 from "../assets/i14.jpg"
-import i15 from "../assets/i15.jpg"
-import i16 from "../assets/i16.jpg"
-import i17 from "../assets/i17.jpg"
+import React from "react";
+import { formatPrice } from "../utils/formatPrise";
+import heart from "../assets/heart.png";
+import fill_heart from "../assets/fill_heart.png";
+import clear from "../assets/delete.png";
+import exp from "../assets/10.jpg";
+import { Link } from "react-router-dom";
 
 const Order = () => {
-
-
   return (
-    <div className="min-h-[90dvh] px-6 lg:px-24">
-      <h1 className="common_title">Uy uchun dizaynlar</h1>
-      <div className="order_wrapper">
-          <img className="d1" src={i1} alt="" />
-          <img className="d2" src={i2} alt="" />
-          <img className="d3" src={i3} alt="" />
-          <img className="d4" src={i4} alt="" />
-          <img className="d5" src={i5} alt="" />
-          <img className="d6" src={i6} alt="" />
-          <img className="d7" src={i7} alt="" />
-          <img className="d8" src={i8} alt="" />
-          <img className="d9" src={i9} alt="" />
-          <img className="d10" src={i10} alt="" />
-          <img className="d11" src={i11} alt="" />
-          <img className="d12" src={i12} alt="" />
-          <img className="d13" src={i13} alt="" />
-          <img className="d14" src={i14} alt="" />
-          <img className="d15" src={i15} alt="" />
-          <img className="d16" src={i16} alt="" />
-          <img className="d17" src={i17} alt="" />
+    <>
+      <div className="order_right">
+        <h2>Umumiy summa: {formatPrice(5123546)} UZS</h2>
+        <p className="mb-3">
+          5 mahsulotlar miqdori uchun: <span className="font-bold">{formatPrice(164452600)} сум</span>
+        </p>
+        <p className="mb-3">
+          Sizning chegirmangiz: <span className="text-red-600 font-bold">-{formatPrice(541452554)} сум</span>
+        </p>
+        <div className="flex flex-col gap-3">
+          <Link
+            to={"/send"}
+            className="text-base font-semibold leading-6 hover:bg-slate-600 transition-colors bg-[#1F2937] text-white py-2 px-5 rounded-2xl text-center"
+          >
+            Davom etish <span aria-hidden="true">&rarr;</span>
+          </Link>
+          <Link
+            to={"/send"}
+            className="text-base font-semibold leading-6 hover:bg-slate-600 transition-colors bg-[#1F2937] text-white py-2 px-5 rounded-2xl text-center"
+          >
+            Mebellar to'plamiga qaytish
+          </Link>
+        </div>
       </div>
-    </div>
+      <div className="min-h-[90dvh] px-6 lg:px-12">
+        <h1 className="common_title">Sizning savatingiz</h1>
+        <div className="order_wrap">
+          <div className="order_left">
+            <div className="order_card">
+              <div className="order_img">
+                <img src={exp} alt="" />
+              </div>
+              <div className="order_content">
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Officia, neque distinctio est ex quam nobis iusto ipsa sit
+                  illum tempore reiciendis eveniet rerum omnis a quaerat facere?
+                  Unde, odio aut?
+                </p>
+              </div>
+              <div className="order_info">
+                <div className="order_price">
+                  <p>{formatPrice(66165200)}</p>
+                  <p>{formatPrice(39726800)} UZS</p>
+                </div>
+                <div className="order_info_buttons sm:w-[180px] w-[70px] sm:py-[8px] py-[5px] sm:px-[15px] px-[10px] flex items-center justify-between text-white rounded-[15px] gap-[15px]">
+                  <button className="cursor-pointer">
+                    <svg
+                      viewBox="0 0 19 5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="cursor-pointer sm:w-[12px] sm:h-[12px] w-[5px] h-[5px]"
+                    >
+                      <path
+                        d="M2 2.5H17.0033"
+                        stroke="white"
+                        strokeWidth="3.18251"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+
+                  <p className="text-white inter sm:text-lg text-sm">5</p>
+
+                  <button className="cursor-pointer">
+                    <svg
+                      viewBox="0 0 19 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="cursor-pointer sm:w-[12px] sm:h-[12px] w-[5px] h-[5px]"
+                    >
+                      <path
+                        d="M2 9.5H17.0033"
+                        stroke="white"
+                        strokeWidth="3.18251"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M9.50195 1.99805V17.0013"
+                        stroke="white"
+                        strokeWidth="3.18251"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div className="order_info_img">
+                  {true ? (
+                    <img src={heart} alt="" />
+                  ) : (
+                    <img src={fill_heart} alt="" />
+                  )}
+                  <img src={clear} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="order_card">
+              <div className="order_img">
+                <img src={exp} alt="" />
+              </div>
+              <div className="order_content">
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Officia, neque distinctio est ex quam nobis iusto ipsa sit
+                  illum tempore reiciendis ev
+                </p>
+              </div>
+              <div className="order_info">
+                <div className="order_price">
+                  <p>{formatPrice(6616520)}</p>
+                  <p>{formatPrice(3972680)} UZS</p>
+                </div>
+                <div className="order_info_buttons sm:w-[180px] w-[70px] sm:py-[8px] py-[5px] sm:px-[15px] px-[10px] flex items-center justify-between text-white rounded-[15px] gap-[15px]">
+                  <button className="cursor-pointer">
+                    <svg
+                      viewBox="0 0 19 5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="cursor-pointer sm:w-[12px] sm:h-[12px] w-[5px] h-[5px]"
+                    >
+                      <path
+                        d="M2 2.5H17.0033"
+                        stroke="white"
+                        strokeWidth="3.18251"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+
+                  <p className="text-white inter sm:text-lg text-sm">5</p>
+
+                  <button className="cursor-pointer">
+                    <svg
+                      viewBox="0 0 19 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="cursor-pointer sm:w-[12px] sm:h-[12px] w-[5px] h-[5px]"
+                    >
+                      <path
+                        d="M2 9.5H17.0033"
+                        stroke="white"
+                        strokeWidth="3.18251"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M9.50195 1.99805V17.0013"
+                        stroke="white"
+                        strokeWidth="3.18251"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div className="order_info_img">
+                  {true ? (
+                    <img src={heart} alt="" />
+                  ) : (
+                    <img src={fill_heart} alt="" />
+                  )}
+                  <img src={clear} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="order_card">
+              <div className="order_img">
+                <img src={exp} alt="" />
+              </div>
+              <div className="order_content">
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Officia, neque distinctio est ex quam nobis iusto ipsa sit
+                  illum tempore reiciendis ev
+                </p>
+              </div>
+              <div className="order_info">
+                <div className="order_price">
+                  <p>{formatPrice(6616520)}</p>
+                  <p>{formatPrice(3972680)} UZS</p>
+                </div>
+                <div className="order_info_buttons sm:w-[180px] w-[70px] sm:py-[8px] py-[5px] sm:px-[15px] px-[10px] flex items-center justify-between text-white rounded-[15px] gap-[15px]">
+                  <button className="cursor-pointer">
+                    <svg
+                      viewBox="0 0 19 5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="cursor-pointer sm:w-[12px] sm:h-[12px] w-[5px] h-[5px]"
+                    >
+                      <path
+                        d="M2 2.5H17.0033"
+                        stroke="white"
+                        strokeWidth="3.18251"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+
+                  <p className="text-white inter sm:text-lg text-sm">5</p>
+
+                  <button className="cursor-pointer">
+                    <svg
+                      viewBox="0 0 19 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="cursor-pointer sm:w-[12px] sm:h-[12px] w-[5px] h-[5px]"
+                    >
+                      <path
+                        d="M2 9.5H17.0033"
+                        stroke="white"
+                        strokeWidth="3.18251"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M9.50195 1.99805V17.0013"
+                        stroke="white"
+                        strokeWidth="3.18251"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div className="order_info_img">
+                  {true ? (
+                    <img src={heart} alt="" />
+                  ) : (
+                    <img src={fill_heart} alt="" />
+                  )}
+                  <img src={clear} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
