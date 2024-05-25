@@ -39,7 +39,6 @@ function App() {
             <Route path="design" element={<Design />} />
             <Route path="order" element={<Order />} />
             <Route path="saved" element={<Saved />} />
-            <Route path="design" element={<Design />} />
             <Route path="contact" element={<Contact />} />
             <Route path="feedback" element={<Feedback />} />
             <Route path="installment" element={<Installment />} />

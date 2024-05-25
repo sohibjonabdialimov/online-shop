@@ -9,10 +9,12 @@ const Dashboard = () => {
   return (
     <>
       <Carousel />
-      <Cards />
-      <Gallery />
-      <AutoSlider />
-      <Location />
+      <div className="container">
+        <Cards />
+        <Gallery />
+        <AutoSlider />
+        <Location />
+      </div>
     </>
   );
 };

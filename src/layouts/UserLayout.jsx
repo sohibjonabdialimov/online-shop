@@ -7,9 +7,7 @@ const UsersLayout = () => {
   return (
     <>
       <Header />
-      <div className="container">
-        <Outlet />
-      </div>
+      <Outlet />
       <Footer />
     </>
   );

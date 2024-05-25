@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Order = () => {
   return (
-    <>
+    <div className="container">
       <div className="order_right">
         <h2>Umumiy summa: {formatPrice(5123546)} UZS</h2>
         <p className="mb-3">
@@ -259,7 +259,7 @@ const Order = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

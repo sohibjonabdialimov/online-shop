@@ -4,7 +4,7 @@ import "./style.css";
 
 const Installment = () => {
   return (
-    <>
+    <div className="container">
       <div className="min-h-[90dvh] px-6 lg:px-32 mx-auto">
         <h1 className="common_title">To'lov rejasi</h1>
         <div className="common_red_line"></div>
@@ -51,7 +51,7 @@ const Installment = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

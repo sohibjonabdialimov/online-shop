@@ -30,7 +30,7 @@ const Feedback = () => {
     }
   };
   return (
-    <>
+    <div className="container">
       <form onSubmit={handleAdd} className="w-full max-w-lg mx-auto mb-[100px]">
         <h1 className="text-#1F2937 text-4xl mt-[60px] mb-16 font-semibold">
           Biz haqimizda sizning fikringiz
@@ -98,7 +98,7 @@ const Feedback = () => {
           )}
         </div>
       </form>
-    </>
+    </div>
   );
 };
 
