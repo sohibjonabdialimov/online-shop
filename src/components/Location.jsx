@@ -3,11 +3,11 @@ import { Location1, Location2, Location3 } from '../assets/location'
 
 const Location = () => {
   return (
-    <div className='p-24'>
-      <h1 className="text-#1F2937 text-4xl mb-12 font-semibold">
+    <div className='sm:p-24 p-8 pb-10'>
+      <h1 className="text-#1F2937 text-2xl sm:text-4xl sm:mb-12 mb-4 sm:font-semibold font-bold">
         Bizning manzilimiz
       </h1>
-      <div className="map_wrap">
+      <div className="map_wrap my-5 sm:my-0">
         <div className="map_item">
           <Location1 />
           <p>Oʻzbekiston, Toshkent shah, Amir Temur koʻch, Yunusobod</p>

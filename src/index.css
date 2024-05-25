@@ -354,7 +354,7 @@ a.active {
   grid-template-columns: auto auto auto;
   justify-content: space-between;
   margin-bottom: 20px;
-  padding: 0 30px;
+  padding: 0 40px;
 }
 .map_wrap svg {
   width: 50px;
@@ -490,10 +490,22 @@ a.active {
 
 @media (max-width: 800px) {
   .map_wrap svg {
-    width: 45px;
+    width: 40px;
   }
   .map_wrap {
-    padding: 0 50px;
+    padding: 0 40px;
+  }
+  #carouselHome .carousel-control-prev-icon {
+    width: 20px;
+    height: 20px;
+  }
+  #carouselHome .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+  }
+  #carouselHome .carousel-control-prev,
+  #carouselHome .carousel-control-next {
+    width: 40px;
   }
 }
 

@@ -17,14 +17,28 @@ import i14 from "../assets/c20.jpg";
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 const AutoSlider = () => {
   return (
-    <div className="p-24 pb-10">
-      <h1 className="text-#1F2937 text-4xl mb-12 font-semibold">
+    <div className="sm:p-24 p-8 pb-10">
+      <h1 className="text-#1F2937 text-2xl sm:text-4xl sm:mb-12 mb-4 sm:font-semibold font-bold">
         Yevropa uslubidagi uylar uchun mebellar
       </h1>
       <Swiper
         spaceBetween={20}
         grabCursor={true}
         loop={true}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        }}
         autoplay={{
           delay: 1200,
           disableOnInteraction: false,
@@ -33,8 +47,8 @@ const AutoSlider = () => {
           clickable: true,
         }}
         modules={[Autoplay, Pagination, Navigation]}
-        slidesPerView={3}
-        className="mySwiper"
+        slidesPerView={2}
+        className="mySwiper mt-5 sm:mt-0 rounded-2xl"
       >
         <SwiperSlide className="bg-red-200">
           <img className="w-[100%] h-60 rounded-2xl" src={i1} alt="" />

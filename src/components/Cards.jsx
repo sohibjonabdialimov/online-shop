@@ -3,15 +3,14 @@ import { Home1, Home2, Home3 } from "../assets/home";
 import a1 from "../assets/a5.jpg"
 import a2 from "../assets/a6.webp"
 import a3 from "../assets/a4.jpg"
-import a4 from "../assets/a3.jpg"
 
 const Cards = () => {
   return (
-    <div className="p-24 pb-10">
-      <h1 className="text-#1F2937 text-4xl mb-12 font-semibold">
+    <div className="sm:p-24 p-8 pb-10">
+      <h1 className="text-#1F2937 text-2xl sm:text-4xl sm:mb-12 mb-2 sm:font-semibold font-bold">
         To'liq to'plamdagi mebellar
       </h1>
-      <div className="grid sm:grid-cols-3 grid-cols-1 sm:gap-4 gap-y-5">
+      <div className="grid sm:grid-cols-3 grid-cols-1 sm:gap-4 gap-y-5 mt-5 sm:mt-0">
         <div className="sm:m-6 m-0 relative overflow-hidden bg-orange-500 rounded-lg shadow-lg furniture_ad_card w-[100%]">
           <Home1 />
           <div className="relative pt-10 px-8 flex items-center justify-center">
