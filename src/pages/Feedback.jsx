@@ -31,8 +31,8 @@ const Feedback = () => {
   };
   return (
     <div className="container">
-      <form onSubmit={handleAdd} className="w-full max-w-lg mx-auto mb-[100px]">
-        <h1 className="text-#1F2937 text-4xl mt-[60px] mb-16 font-semibold">
+      <form onSubmit={handleAdd} className="w-full max-w-lg mx-auto mb-[100px] px-8 sm:px-0">
+        <h1 className="common_title">
           Biz haqimizda sizning fikringiz
         </h1>
         <div className="flex flex-wrap -mx-3 mb-6">

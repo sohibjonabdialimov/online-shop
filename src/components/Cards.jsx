@@ -7,7 +7,7 @@ import a3 from "../assets/a4.jpg"
 const Cards = () => {
   return (
     <div className="sm:p-24 p-8 pb-10">
-      <h1 className="text-#1F2937 text-2xl sm:text-4xl sm:mb-12 mb-2 sm:font-semibold font-bold">
+      <h1 className="text-#1F2937 text-[26px] sm:text-4xl sm:mb-12 mb-2 sm:font-semibold font-bold">
         To'liq to'plamdagi mebellar
       </h1>
       <div className="grid sm:grid-cols-3 grid-cols-1 sm:gap-4 gap-y-5 mt-5 sm:mt-0">

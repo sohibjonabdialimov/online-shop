@@ -30,7 +30,23 @@ const Header = () => {
               </span>
             </Link>
           </div>
-          <div className="flex lg:hidden">
+          <div className="flex lg:hidden gap-4">
+            <div className="flex items-center gap-4">
+              <NavLink
+                to={"/order"}
+                className="block w-[30px] h-[30px] header_img"
+              >
+                <img className="object-cover" src={basket} alt="" />
+                <p>0</p>
+              </NavLink>
+              <NavLink
+                to={"/saved"}
+                className="block w-[30px] h-[30px] header_img"
+              >
+                <img className="object-cover" src={saved} alt="" />
+                <p>0</p>
+              </NavLink>
+            </div>
             <button
               onClick={() => openNavbarFunction()}
               type="button"
@@ -146,36 +162,45 @@ const Header = () => {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
-                  <Link
+                  <NavLink
                     to={"/"}
                     className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Bosh sahifa
-                  </Link>
-                  <Link
+                  </NavLink>
+                  <NavLink
                     to={"/furnitures"}
                     className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Mebellar
-                  </Link>
-                  <Link
+                  </NavLink>
+                  <NavLink
                     to={"/design"}
                     className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Dizaynlar
-                  </Link>
-                  <Link
+                  </NavLink>
+                  <NavLink
+                    to={"/installment"}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    To'lov rejasi
+                  </NavLink>
+                  <NavLink
                     to={"/contact"}
                     className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Biz bilan bog'laning
-                  </Link>
-                  {/* <Link
-                    to={"/contact"}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    <img src={basket} alt="" />
-                  </Link> */}
+                    Aloqa
+                  </NavLink>
+                  <div className="lg:hidden flex lg:flex-1 lg:justify-end">
+                    <NavLink
+                      to={"/feedback"}
+                      className="text-base font-semibold leading-6 hover:bg-slate-600 transition-colors bg-[#1F2937] text-white py-2 px-5 rounded"
+                    >
+                      Fikr-mulohazalar uchun
+                      <span aria-hidden="true">&rarr;</span>
+                    </NavLink>
+                  </div>
                 </div>
               </div>
             </div>

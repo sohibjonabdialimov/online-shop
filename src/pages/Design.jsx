@@ -38,7 +38,7 @@ const Design = () => {
           <img className="d14" src={i14} alt="" />
           <img className="d15" src={i15} alt="" />
           <img className="d16" src={i16} alt="" />
-          <img className="d17" src={i17} alt="" />
+          <img className="d17 sm:block hidden" src={i17} alt="" />
         </div>
       </div>
     </div>

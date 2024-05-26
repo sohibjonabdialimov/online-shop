@@ -18,7 +18,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 const AutoSlider = () => {
   return (
     <div className="sm:p-24 p-8 pb-10">
-      <h1 className="text-#1F2937 text-2xl sm:text-4xl sm:mb-12 mb-4 sm:font-semibold font-bold">
+      <h1 className="text-#1F2937 text-[26px] sm:text-4xl sm:mb-12 mb-4 sm:font-semibold font-bold">
         Yevropa uslubidagi uylar uchun mebellar
       </h1>
       <Swiper

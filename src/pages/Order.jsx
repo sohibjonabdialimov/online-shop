@@ -9,13 +9,17 @@ import { Link } from "react-router-dom";
 const Order = () => {
   return (
     <div className="container">
-      <div className="order_right">
-        <h2>Umumiy summa: {formatPrice(5123546)} UZS</h2>
+      <div className="hidden sm:block order_right">
+        <h2>Umumiy summa: {formatPrice(16452600)} UZS</h2>
         <p className="mb-3">
-          5 mahsulotlar miqdori uchun: <span className="font-bold">{formatPrice(164452600)} сум</span>
+          5 mahsulotlar miqdori uchun:{" "}
+          <span className="font-bold">{formatPrice(16445600)} сум</span>
         </p>
         <p className="mb-3">
-          Sizning chegirmangiz: <span className="text-red-600 font-bold">-{formatPrice(541452554)} сум</span>
+          Sizning chegirmangiz:{" "}
+          <span className="text-red-600 font-bold">
+            -{formatPrice(541452554)} сум
+          </span>
         </p>
         <div className="flex flex-col gap-3">
           <Link
@@ -25,7 +29,7 @@ const Order = () => {
             Davom etish <span aria-hidden="true">&rarr;</span>
           </Link>
           <Link
-            to={"/send"}
+            to={"/furnitures"}
             className="text-base font-semibold leading-6 hover:bg-slate-600 transition-colors bg-[#1F2937] text-white py-2 px-5 rounded-2xl text-center"
           >
             Mebellar to'plamiga qaytish
@@ -255,6 +259,34 @@ const Order = () => {
                   <img src={clear} alt="" />
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="sm:hidden block order_sum">
+            <h2>Umumiy summa: {formatPrice(16445260)} UZS</h2>
+            <p className="mb-3">
+              5 mahsulot miqdori uchun:{" "}
+              <span className="font-bold">{formatPrice(16445260)} UZS</span>
+            </p>
+            <p className="mb-3">
+              Sizning chegirmangiz:{" "}
+              <span className="text-red-600 font-bold">
+                -{formatPrice(541452554)} UZS
+              </span>
+            </p>
+            <div className="flex flex-col gap-3">
+              <Link
+                to={"/send"}
+                className="text-base font-semibold leading-6 hover:bg-slate-600 transition-colors bg-[#1F2937] text-white py-2 px-5 rounded-2xl text-center"
+              >
+                Davom etish <span aria-hidden="true">&rarr;</span>
+              </Link>
+              <Link
+                to={"/furnitures"}
+                className="text-base font-semibold leading-6 hover:bg-slate-600 transition-colors bg-[#1F2937] text-white py-2 px-5 rounded-2xl text-center"
+              >
+                Mebellar to'plamiga qaytish
+              </Link>
             </div>
           </div>
         </div>

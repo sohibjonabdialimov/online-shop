@@ -51,8 +51,8 @@ const Carousel = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <h1 className="text-2xl font-bold tracking-tight text-white sm:text-6xl">
-                    Interyeringiz yorqin bo'lsin
+                  <h1 className="text-[26px] font-bold tracking-tight text-white sm:text-6xl">
+                    Chegirma va foizsiz to'lovlar barchasi siz uchun
                   </h1>
                   <p className="mt-6 sm:text-lg text-[15px] px-3 sm:px-0 leading-8 text-white">
                     Chegirmalar bilan har qanday xona uchun zamonaviy mebellar
@@ -95,10 +95,10 @@ const Carousel = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                  <h1 className="text-2xl font-bold tracking-tight text-white sm:text-6xl">
                     Tez va sifatli ko'rinishda yetkazib beramiz!
                   </h1>
-                  <p className="mt-6 text-lg leading-8 text-white">
+                  <p className="mt-6 sm:text-lg text-[15px] px-3 sm:px-0 leading-8 text-white">
                     Siz tanlagan mebellarni seshanba, payshanba va shanba
                     kunlari tezlik bilan yetkazib beriladi.
                   </p>
@@ -139,12 +139,11 @@ const Carousel = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                  <h1 className="text-2xl font-bold tracking-tight text-white sm:text-6xl">
                     Mebellar sifatiga 100% javob beramiz!
                   </h1>
-                  <p className="mt-6 text-lg leading-8 text-white">
+                  <p className="mt-6 sm:text-lg text-[15px] px-3 sm:px-0 leading-8 text-white">
                     Zamonaviy va dunyo standartlariga mos mebellar to'plami.
-                    Mebellearimiz odamlar ishonchini oqlab kelmoqda ...
                   </p>
                   <div className="mt-10 flex items-center justify-center gap-x-6">
                     <Link
