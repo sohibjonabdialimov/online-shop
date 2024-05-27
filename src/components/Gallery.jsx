@@ -19,18 +19,42 @@ const Gallery = () => {
         Zamonaviy mebellar
       </h1>
       <div className="gallery mt-5 sm:mt-0">
-        <img className="i1" src={i1} alt="" />
-        <img className="i2 sm:block hidden" src={i2} alt="" />
-        <img className="i3" src={i3} alt="" />
-        <img className="i4" src={i4} alt="" />
-        <img className="i5 sm:block hidden" src={i5} alt="" />
-        <img className="i6" src={i6} alt="" />
-        <img className="i7" src={i7} alt="" />
-        <img className="i8 sm:block hidden" src={i8} alt="" />
-        <img className="i9" src={i9} alt="" />
-        <img className="i10" src={i10} alt="" />
-        <img className="i11 sm:block hidden" src={i11} alt="" />
-        <img className="i12" src={i12} alt="" />
+        <div className="i1">
+          <img src={i1} alt="" />
+        </div>
+        <div className="i2 sm:block hidden">
+          <img src={i2} alt="" />
+        </div>
+        <div className="i3">
+          <img src={i3} alt="" />
+        </div>
+        <div className="i4">
+          <img src={i4} alt="" />
+        </div>
+        <div className="i5 sm:block hidden">
+          <img src={i5} alt="" />
+        </div>
+        <div className="i6">
+          <img src={i6} alt="" />
+        </div>
+        <div className="i7">
+          <img src={i7} alt="" />
+        </div>
+        <div className="i8 sm:block hidden">
+          <img src={i8} alt="" />
+        </div>
+        <div className="i9">
+          <img src={i9} alt="" />
+        </div>
+        <div className="i10">
+          <img src={i10} alt="" />
+        </div>
+        <div className="i11 sm:block hidden">
+          <img src={i11} alt="" />
+        </div>
+        <div className="i12">
+          <img src={i12} alt="" />
+        </div>
       </div>
     </div>
   );

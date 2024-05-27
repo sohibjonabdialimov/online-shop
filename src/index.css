@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg_img {
-  background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.8)), url("./assets/home4.webp");
+.bg_img1 {
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7)), url("./assets/home4.webp");
+  background-size: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.bg_img2 {
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7)), url("./assets/home3.jpg");
+  background-size: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.bg_img3 {
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7)), url("./assets/home5.png");
   background-size: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -66,6 +78,7 @@ a.active {
   border: 0.5px solid #bbb;
   box-shadow: 15px 15px 25px #aaaaaa4e;
 }
+
 .furniture_img {
   width: 100%;
   background-color: #f9f9f9;
@@ -78,18 +91,31 @@ a.active {
 .furniture_img img {
   object-fit: cover;
 }
-.furniture_ad_card {
-  transition: 0.3s;
+.cards_img{
+  width: 100%;
+  height: 24rem;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
 }
-.furniture_ad_card img {
-  transition: 0.3s;
+.cards_img img{
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(1.15);
+	transform: scale(1.15);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
+.cards_img img:hover{
+  -webkit-transform: scale(1);
+	transform: scale(1);
+}
+
 .furniture_ad_card:hover {
   box-shadow: 10px 10px 10px #00000055;
 }
-.furniture_ad_card:hover img {
-  transform: scale(1.1);
-}
+
 .furniture_img {
   position: relative;
 }
@@ -139,20 +165,30 @@ a.active {
 /* gallery page */
 .gallery {
   display: grid;
-  gap: 30px;
+  gap: 10px;
   grid-template-areas:
     "i1 i1 i2 i2 i2 i2 i2 i3 i3 i3 i3 i3"
     "i4 i4 i4 i4 i4 i5 i5 i5 i5 i5 i6 i6"
     "i7 i7 i8 i8 i8 i8 i8 i9 i9 i9 i9 i9"
     "i10 i10 i10 i10 i10 i11 i11 i11 i11 i11 i12 i12";
 }
-.gallery img {
+.gallery div {
   height: 300px;
-  transition: 0.3s transform;
-  border-radius: 25px;
+  border-radius: 15px;
+  margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+.gallery div img{
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 .gallery img:hover {
-  transform: scale(1.16);
+  -webkit-transform: scale(1.16);
+	transform: scale(1.16);
 }
 
 .i1 {

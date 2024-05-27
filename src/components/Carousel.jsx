@@ -8,7 +8,7 @@ const Carousel = () => {
     <>
       <div
         id="carouselHome"
-        className="carousel slide bg_img"
+        className="carousel slide "
         data-bs-ride="carousel"
       >
         <div className="carousel-indicators">
@@ -34,7 +34,7 @@ const Carousel = () => {
           ></button>
         </div>
         <div className="carousel-inner">
-          <div className="carousel-item active" data-bs-interval="4000">
+          <div className="carousel-item active bg_img1" data-bs-interval="4000">
             <div className="relative isolate px-6 pt-0 lg:px-8">
               <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
                 <div className="hidden sm:mb-8 sm:flex sm:justify-center">
@@ -52,7 +52,7 @@ const Carousel = () => {
                 </div>
                 <div className="text-center">
                   <h1 className="text-[26px] font-bold tracking-tight text-white sm:text-6xl">
-                    Chegirma va foizsiz to'lovlar barchasi siz uchun
+                    Mebellarni chegirma bilan xarid qiling
                   </h1>
                   <p className="mt-6 sm:text-lg text-[15px] px-3 sm:px-0 leading-8 text-white">
                     Chegirmalar bilan har qanday xona uchun zamonaviy mebellar
@@ -76,7 +76,7 @@ const Carousel = () => {
               </div>
             </div>
           </div>
-          <div className="carousel-item" data-bs-interval="4000">
+          <div className="carousel-item bg_img2" data-bs-interval="4000">
             {/* <img src="./img/kif-2.jfif" className="d-block w-100" alt="..." /> */}
 
             <div className="relative isolate px-6 pt-0 lg:px-8">
@@ -120,9 +120,7 @@ const Carousel = () => {
               </div>
             </div>
           </div>
-          <div className="carousel-item" data-bs-interval="4000">
-            {/* <img src="./img/kif-2.jfif" className="d-block w-100" alt="..." /> */}
-
+          <div className="carousel-item bg_img3" data-bs-interval="4000">
             <div className="relative isolate px-6 pt-0 lg:px-8">
               <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
                 <div className="hidden sm:mb-8 sm:flex sm:justify-center">
@@ -143,7 +141,8 @@ const Carousel = () => {
                     Mebellar sifatiga 100% javob beramiz!
                   </h1>
                   <p className="mt-6 sm:text-lg text-[15px] px-3 sm:px-0 leading-8 text-white">
-                    Zamonaviy va dunyo standartlariga mos mebellar to'plami.
+                    Zamonaviy va dunyo standartlariga mos mebellar to'plamini
+                    chegirma va foizsiz to'lovlar bilan xarid qiling.
                   </p>
                   <div className="mt-10 flex items-center justify-center gap-x-6">
                     <Link
