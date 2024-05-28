@@ -15,7 +15,7 @@ const Header = () => {
     <>
       <header className="sticky top-0 z-50 container bg-white shadow-md">
         <nav
-          className="flex items-center justify-between p-6 lg:px-28"
+          className="flex items-center justify-between p-6 lg:px-20"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
@@ -69,7 +69,7 @@ const Header = () => {
               </svg>
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-8 justify-between items-center">
+          <div className="hidden lg:flex lg:gap-x-7 justify-between items-center">
             <NavLink
               to={"/"}
               className={`text-base font-mono leading-6 text-gray-900`}

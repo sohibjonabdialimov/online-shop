@@ -55,7 +55,7 @@ const Carousel = () => {
                     Mebellarni chegirma bilan xarid qiling
                   </h1>
                   <p className="mt-6 sm:text-lg text-[15px] px-3 sm:px-0 leading-8 text-white">
-                    Chegirmalar bilan har qanday xona uchun zamonaviy mebellar
+                    Chegirmalar bilan siz xohlagan sifatli, zamonaviy va hamyonbop mebellar
                     va yoritish mahsulotlari
                   </p>
                   <div className="mt-10 flex items-center justify-center gap-x-6">

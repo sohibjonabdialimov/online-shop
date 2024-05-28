@@ -4,19 +4,19 @@
 
 .bg_img1 {
   background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7)), url("./assets/home4.webp");
-  background-size: 100%;
+  background-size: 100% 650px;
   width: 100%;
   background-repeat: no-repeat;
 }
 .bg_img2 {
   background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7)), url("./assets/home3.jpg");
-  background-size: 100%;
+  background-size: 100% 650px;
   width: 100%;
   background-repeat: no-repeat;
 }
 .bg_img3 {
   background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7)), url("./assets/home5.png");
-  background-size: 100%;
+  background-size: 100% 650px;
   width: 100%;
   background-repeat: no-repeat;
 }
