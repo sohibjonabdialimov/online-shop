@@ -7,6 +7,7 @@ const Location = () => {
       <h1 className="text-#1F2937 text-[26px] sm:text-4xl sm:mb-12 mb-4 sm:font-semibold font-bold">
         Bizning manzilimiz
       </h1>
+      <p className="w-3/4 text-lg leading-8">Biz bugungi kundagi eng dolzarb assortimentlarni taklif etamiz va mijozlarga sotib olishga ishonch hosil qilish uchun barcha imkoniyatlarni taqdim etamiz. Biz sizni manzilimizga tashrif buyurishga va shaxsan mebellarimiz uchun ishlatiladigan mato va materiallarning sifatini baholashingizga, ishlash mexanizmlarni va qulayliklarni tekshirishga, mebelimizning sifatliligiga ishonch hosil qilishga taklif qilamiz!</p>
       <div className="map_wrap my-5 sm:my-0">
         <div className="map_item">
           <Location1 />
@@ -14,11 +15,11 @@ const Location = () => {
         </div>
         <div className="map_item">
           <Location2 />
-          <p>Universam bozoriga 3 daqiqa</p>
+          <p>Universam bozoridan 3 daqiqa</p>
         </div>
         <div className="map_item">
           <Location3 />
-          <p>Aeroportga 8 daqiqa</p>
+          <p>Aeroportdan 8 daqiqa</p>
         </div>
       </div>
       <iframe

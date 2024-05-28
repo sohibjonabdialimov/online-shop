@@ -13,7 +13,7 @@ const Header = () => {
   }
   return (
     <>
-      <header className="relative z-50 container">
+      <header className="sticky top-0 z-50 container bg-white shadow-md">
         <nav
           className="flex items-center justify-between p-6 lg:px-28"
           aria-label="Global"
