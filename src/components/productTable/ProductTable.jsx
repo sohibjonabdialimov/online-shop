@@ -1,6 +1,6 @@
 import "./productTable.scss";
 import { DataGrid } from "@mui/x-data-grid";
-import { Product, userRows } from "../../datatablesource";
+import { Product } from "../../datatablesource";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { db } from "../../firebase";
