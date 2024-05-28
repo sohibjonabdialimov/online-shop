@@ -13,7 +13,7 @@ const Header = () => {
   }
   return (
     <>
-      <header className="sticky top-0 z-50 container bg-white shadow-md">
+      <header className="sticky top-0 z-50 bg-white shadow-md">
         <nav
           className="flex items-center justify-between p-6 lg:px-20"
           aria-label="Global"
@@ -112,9 +112,9 @@ const Header = () => {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <NavLink
               to={"/feedback"}
-              className="text-base font-semibold leading-6 hover:bg-slate-600 transition-colors bg-[#1F2937] text-white py-2 px-5 rounded"
+              className="text-base font-semibold leading-6 hover:bg-slate-600 transition-colors bg-[#1F2937] text-white py-2 px-4 rounded"
             >
-              Fikr-mulohazalar uchun<span aria-hidden="true">&rarr;</span>
+              Fikr-mulohazalar <span aria-hidden="true">&rarr;</span>
             </NavLink>
           </div>
         </nav>
