@@ -7,7 +7,7 @@ const Location = () => {
       <h1 className="text-#1F2937 text-[26px] sm:text-4xl sm:mb-12 mb-4 sm:font-semibold font-bold">
         Bizning manzilimiz
       </h1>
-      <p className="w-3/4 text-lg leading-8">Biz bugungi kundagi eng dolzarb assortimentlarni taklif etamiz va mijozlarga sotib olishga ishonch hosil qilish uchun barcha imkoniyatlarni taqdim etamiz. Biz sizni manzilimizga tashrif buyurishga va shaxsan mebellarimiz uchun ishlatiladigan mato va materiallarning sifatini baholashingizga, ishlash mexanizmlarni va qulayliklarni tekshirishga, mebelimizning sifatliligiga ishonch hosil qilishga taklif qilamiz!</p>
+      <p className="sm:w-3/4 w-[100%] text-lg leading-8 text-justify sm:text-start">Biz bugungi kundagi eng dolzarb assortimentlarni taklif etamiz va mijozlarga sotib olishga ishonch hosil qilish uchun barcha imkoniyatlarni taqdim etamiz. Biz sizni manzilimizga tashrif buyurishga va shaxsan mebellarimiz uchun ishlatiladigan mato va materiallarning sifatini baholashingizga, ishlash mexanizmlarni va qulayliklarni tekshirishga, mebelimizning sifatliligiga ishonch hosil qilishga taklif qilamiz!</p>
       <div className="map_wrap my-5 sm:my-0">
         <div className="map_item">
           <Location1 />

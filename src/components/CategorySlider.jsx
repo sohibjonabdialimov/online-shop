@@ -12,11 +12,11 @@ import i8 from "../assets/c14.jpg";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const CategorySlider = () => {
   return (
-    <div className="sm:p-24 p-8 pb-10">
+    <div className="sm:p-24 p-8 pb-10 categorySlider">
       <h1 className="text-#1F2937 text-[26px] sm:text-4xl sm:mb-12 mb-4 sm:font-semibold font-bold">
         Bizning kategoriyalarimiz
       </h1>
-      <p className="w-3/4 text-lg leading-8">E-Mebel.uz - haqiqatan ham qulay mebellarning onlayn-do'koni. Biz o'z mijozlarimizga ishlab chiqarishdagi zamonaviy mebellarni taklif etamiz va nafaqat mahsulotlarning yuqori sifatini, balki hamyonbop narxlarni ham taklif qilamiz. Va bizning muntazam aksiyalarimiz va maxsus takliflarimiz sizni hayratda qoldiradi!</p>
+      <p className="sm:w-3/4 w-[100%] text-lg leading-8 text-justify sm:text-start">Bizning onlayn-do'konimizda faqat e'tibor bilan tanlangan mebellar taqdim etilgan,bizning ajoyib mebellar – Toshkent va butun O'zbekiston bo'ylab yetkazib beriladi. Onlayn katalogimizdagi har bir divan ajoyib dizaynning timsolidir!</p>
       <Swiper
         spaceBetween={20}
         grabCursor={true}
@@ -38,7 +38,7 @@ const CategorySlider = () => {
           clickable: true,
         }}
         modules={[Autoplay, Pagination, Navigation]}
-        slidesPerView={2}
+        slidesPerView={1}
         navigation={true}
         className="mySwiper mt-5 sm:mt-0 rounded-2xl"
       >

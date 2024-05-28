@@ -195,6 +195,8 @@ a.active {
 }
 .gallery div img{
   -webkit-transform: scale(1);
+  width: 100%;
+  height: 100%;
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
@@ -343,33 +345,33 @@ a.active {
   width: 100%;
 }
 /* Carousel page */
-.swiper {
-  padding-top: 100px !important;
+.categorySlider .swiper {
+  padding-top: 70px !important;
   overflow-x: hidden !important;
   overflow-y: auto !important;
 }
-.swiper-button-prev{
+.categorySlider .swiper-button-prev{
   width: 50px !important;
   height: 50px !important;
   border: 1px solid #aaa;
   border-radius: 50% !important;
-  top: 50px !important;
+  top: 25px !important;
   right: 70px !important;
   left: auto !important;
 }
-.swiper-button-next{
+.categorySlider .swiper-button-next{
   width: 50px !important;
   height: 50px !important;
   border: 1px solid #aaa;
   border-radius: 50% !important;
-  top: 50px !important;
+  top: 25px !important;
   right: 0 !important;
   left: auto !important;
 }
-.swiper-button-prev:after{
+.categorySlider .swiper-button-prev:after{
   font-size: 20px !important;
 }
-.swiper-button-next:after{
+.categorySlider .swiper-button-next:after{
   font-size: 20px !important;
 }
 
