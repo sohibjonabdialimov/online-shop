@@ -29,6 +29,8 @@ const Furniture = () => {
       <div className="min-h-[90dvh] px-6 lg:px-32 mx-auto">
         <h1 className="common_title">Mebellar to'plami</h1>
 
+
+
         <div className="furniture_wrap">
           {data.map((item) => {
             return (
